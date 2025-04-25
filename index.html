@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Комплэд</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--
@@ -12,6 +12,8 @@
     <link rel="icon" href="img/favicons/kompled.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
 -->
+
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -28,13 +30,10 @@
                             <li><a href="#" class="active-navigation">Главная</a></li>
                             <li><a href="#">О нас</a></li>
                             <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="portfolio.html">Портфолио</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </div>
-                    <!--
-                    <a href="#" class="serch"></a>
-                    -->
                 </div>
             </div>
         </nav>
@@ -53,8 +52,8 @@
                         <h2 class="intro-slogan">Ваш идеальный интерьер здесь</h2>
                         <p>Мы создадим интерьер, в котором хочется жить, работать и мечтать. Воплотим самые смелые идеи,
                             превратив ваше пространство в произведение искусства.</p>
-                        <a href="#" class="button intro-button">Смотреть портфолио<svg width="18" height="17"
-                                viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="portfolio.html" class="button intro-button">Смотреть портфолио<svg width="18"
+                                height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 8.15295L14.7232 8.0161M9.61818 1.62891L16.1412 8.15189L9.48677 14.8063"
                                     stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                             </svg></a>
@@ -72,19 +71,31 @@
                         <p>Разработка концепции дизайна.<br>Подбор стилистики, создание визуализации и
                             чертежей.<br>Индивидуальный подбор качественных материалов, мебели и элементов декорации.
                         </p>
-                        <a href="#" class="button service-button">Узнать больше</a>
+                        <a href="design_services.html" class="button service-button">Узнать больше<svg width="18"
+                                height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8.15295L14.7232 8.0161M9.61818 1.62891L16.1412 8.15189L9.48677 14.8063"
+                                    stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                            </svg></a>
                     </li>
                     <li class="service-item">
                         <h3>Ремонт и отделочные<br>работы</h3>
                         <p>Проведение строительных и отделочных работ под ключ.<br>Контроль качества на каждом
                             этапе.<br>Использование современных технологий и проверенных материалов. </p>
-                        <a href="#" class="button service-button">Узнать больше</a>
+                        <a href="repair_services.html" class="button service-button">Узнать больше<svg width="18"
+                                height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8.15295L14.7232 8.0161M9.61818 1.62891L16.1412 8.15189L9.48677 14.8063"
+                                    stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                            </svg></a>
                     </li>
                     <li class="service-item">
                         <h3>Авторский<br>надзор</h3>
                         <p>Контроль выполнения всех этапов в соответствии с проектом.<br>Решение технических и
                             организационных вопросов.<br>Своевременная корректировка деталей проекта.</p>
-                        <a href="#" class="button service-button">Узнать больше</a>
+                        <a href="supervision_services.html" class="button service-button">Узнать больше<svg width="18"
+                                height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8.15295L14.7232 8.0161M9.61818 1.62891L16.1412 8.15189L9.48677 14.8063"
+                                    stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                            </svg></a>
                     </li>
                 </ul>
             </div>
@@ -135,56 +146,56 @@
 
         <section class="projects">
             <div class="container">
-                <div class="progects-block">
-                    <div class="progect-description">
+                <div class="projects-block">
+                    <div class="project-description">
                         <h2 class="visually-hidden">Портфолио</h2>
                         <h3>Превращаем идеи в реальность!</h3>
                         <p class="projects-slogan">Мы гордимся своими проектами, которые вдохновляют и удивляют.
                             Посмотрите, как мы преображаем обычные помещения в стильные и функциональные интерьеры.
                             Возможно, ваш проект станет следующим в нашей коллекции.</p>
                     </div>
-                    <div class="projects-list">
-                        <div class="project-item">
+                    <ul class="projects-list clear-list">
+                        <li class="project-item">
                             <img class="project-img" src="img/main/portfolio1.png" alt="" width="548" height="525">
                             <div class="project-info">
-                                <div>
+                                <div class="project-caption">
                                     <p class="project-adress">Ул. Звёздная</p>
                                     <p class="project-style">Барокко</p>
                                 </div>
                                 <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
                             </div>
-                        </div>
-                        <div class="project-item">
+                        </li>
+                        <li class="project-item">
                             <img class="project-img" src="img/main/portfolio2.png" alt="" width="548" height="525">
                             <div class="project-info">
-                                <div>
+                                <div class="project-caption">
                                     <p class="project-adress">Ул. Малая Садовая</p>
                                     <p class="project-style">Арт-деко</p>
                                 </div>
                                 <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
                             </div>
-                        </div>
-                        <div class="project-item">
+                        </li>
+                        <li class="project-item">
                             <img class="project-img" src="img/main/portfolio3.png" alt="" width="548" height="525">
                             <div class="project-info">
-                                <div>
+                                <div class="project-caption">
                                     <p class="project-adress">Ул. Рубинштейна</p>
                                     <p class="project-style">Античный</p>
                                 </div>
                                 <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
                             </div>
-                        </div>
-                        <div class="project-item">
+                        </li>
+                        <li class="project-item">
                             <img class="project-img" src="img/main/portfolio4.png" alt="" width="548" height="525">
                             <div class="project-info">
-                                <div>
+                                <div class="project-caption">
                                     <p class="project-adress">Ул. Пушкинская</p>
                                     <p class="project-style">Хай-тек</p>
                                 </div>
                                 <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -333,7 +344,7 @@
                     <ul class="footer-pages clear-list">
                         <li><a href="#">О нас</a></li>
                         <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </section>

@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!--
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/kompled.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/180.png">
--->
-
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -22,16 +19,16 @@
             <div class="container">
                 <div class="main-navigation-wrapper">
                     <a class="hf-logo" href="#">
-                        <img src="img/icons/favicons/kompled.svg" width="35.5" height="39" alt="Логотип">
+                        <img src="img/favicons/kompled.svg" width="35.5" height="39" alt="Логотип">
                         <h1>Комплэд</h1>
                     </a>
                     <div class="line-nav">
                         <ul class="site-navigation clear-list">
                             <li><a href="#" class="active-navigation">Главная</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Услуги</a></li>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="services.html">Услуги</a></li>
                             <li><a href="portfolio.html">Портфолио</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="form.html">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -71,7 +68,7 @@
                         <p>Разработка концепции дизайна.<br>Подбор стилистики, создание визуализации и
                             чертежей.<br>Индивидуальный подбор качественных материалов, мебели и элементов декорации.
                         </p>
-                        <a href="design_services.html" class="button service-button">Узнать больше<svg width="18"
+                        <a href="designServices.html" class="button service-button">Узнать больше<svg width="18"
                                 height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 8.15295L14.7232 8.0161M9.61818 1.62891L16.1412 8.15189L9.48677 14.8063"
                                     stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
@@ -81,7 +78,7 @@
                         <h3>Ремонт и отделочные<br>работы</h3>
                         <p>Проведение строительных и отделочных работ под ключ.<br>Контроль качества на каждом
                             этапе.<br>Использование современных технологий и проверенных материалов. </p>
-                        <a href="repair_services.html" class="button service-button">Узнать больше<svg width="18"
+                        <a href="repairServices.html" class="button service-button">Узнать больше<svg width="18"
                                 height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 8.15295L14.7232 8.0161M9.61818 1.62891L16.1412 8.15189L9.48677 14.8063"
                                     stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
@@ -113,29 +110,39 @@
                             пространства,
                             которые соответствуют вашему стилю жизни и вдохновляют каждый день.</p>
                     </div>
-                    <img class="about-company-img" src="img/main/about_company.jpg" alt="">
+                    <img class="about-company-img" src="img/main/aboutCompany.jpg" alt="">
                 </div>
             </div>
         </section>
 
         <section class="statistics">
             <div class="container">
+                <h2 class="visually-hidden">Статистика</h2>
                 <ul class="statistics-list clear-list">
                     <li class="statistics-item">
                         <p class="statistics-numb">30</p>
                         <p class="statistics-content">Лет существования студии</p>
                     </li>
-                    <img class="statistics-line" src="img/main/Line.svg" height="130px">
+                    <svg class="statistics-line" width="2" height="130" viewBox="0 0 2 130" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="2.65135e-08" x2="0.999995" y2="130" stroke="#CDA274" />
+                    </svg>
                     <li class="statistics-item">
                         <p class="statistics-numb">287</p>
                         <p class="statistics-content">Успешных проектов</p>
                     </li>
-                    <img class="statistics-line" src="img/main/Line.svg">
+                    <svg class="statistics-line" width="2" height="130" viewBox="0 0 2 130" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="2.65135e-08" x2="0.999995" y2="130" stroke="#CDA274" />
+                    </svg>
                     <li class="statistics-item">
                         <p class="statistics-numb">15</p>
                         <p class="statistics-content">Проектов в разработке</p>
                     </li>
-                    <img class="statistics-line" src="img/main/Line.svg">
+                    <svg class="statistics-line" width="2" height="130" viewBox="0 0 2 130" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="2.65135e-08" x2="0.999995" y2="130" stroke="#CDA274" />
+                    </svg>
                     <li class="statistics-item">
                         <p class="statistics-numb">250+</p>
                         <p class="statistics-content">Довольных клиентов</p>
@@ -162,7 +169,7 @@
                                     <p class="project-adress">Ул. Звёздная</p>
                                     <p class="project-style">Барокко</p>
                                 </div>
-                                <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
+                                <a class="project-link" href="portfolioItem.html?id=2"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
                             </div>
                         </li>
                         <li class="project-item">
@@ -172,7 +179,7 @@
                                     <p class="project-adress">Ул. Малая Садовая</p>
                                     <p class="project-style">Арт-деко</p>
                                 </div>
-                                <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
+                                <a class="project-link" href="portfolioItem.html?id=4"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
                             </div>
                         </li>
                         <li class="project-item">
@@ -182,7 +189,7 @@
                                     <p class="project-adress">Ул. Рубинштейна</p>
                                     <p class="project-style">Античный</p>
                                 </div>
-                                <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
+                                <a class="project-link" href="portfolioItem.html?id=1"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
                             </div>
                         </li>
                         <li class="project-item">
@@ -192,7 +199,7 @@
                                     <p class="project-adress">Ул. Пушкинская</p>
                                     <p class="project-style">Хай-тек</p>
                                 </div>
-                                <a class="project-link" href=""><img src="img/main/arrow_portfolio_item.svg" alt=""></a>
+                                <a class="project-link" href="portfolioItem.html?id=3"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
                             </div>
                         </li>
                     </ul>
@@ -214,7 +221,7 @@
                         <div class="slider-track" id="sliderTrack">
                             <div class="testimonial">
                                 <div class="review-head">
-                                    <img class="review-img" src="https://i.pravatar.cc/80?u=1" alt="avatar">
+                                    <img class="review-img" src="img/main/portret1.png" alt="avatar">
                                     <p class="review-name">Александра Мушинская</p>
                                 </div>
                                 <p class="review-text">Обратились за разработкой дизайн-проекта и остались в восторге!
@@ -223,7 +230,7 @@
                             </div>
                             <div class="testimonial">
                                 <div class="review-head">
-                                    <img class="review-img" src="https://i.pravatar.cc/80?u=1" alt="avatar">
+                                    <img class="review-img" src="img/main/portret2.png" alt="avatar">
                                     <p class="review-name">Наталья Тогочиева</p>
                                 </div>
                                 <p class="review-text">Комплэд взял на себя всю организацию работ, контроль качества и
@@ -232,7 +239,7 @@
                             </div>
                             <div class="testimonial">
                                 <div class="review-head">
-                                    <img class="review-img" src="https://i.pravatar.cc/80?u=1" alt="avatar">
+                                    <img class="review-img" src="img/main/portret3.png" alt="avatar">
                                     <p class="review-name">Дмитрий Эрб</p>
                                 </div>
                                 <p class="review-text">Студия Комплэд помогла нам с дизайном и реализацией офиса. Всё
@@ -242,7 +249,7 @@
                             <div class="testimonial">
                                 <div class="review-head">
                                     <img class="review-img" src="https://i.pravatar.cc/80?u=1" alt="avatar">
-                                    <p class="review-name">Кузнецова Анастасия</p>
+                                    <p class="review-name">Анастасия Кузнецова</p>
                                 </div>
                                 <p class="review-text">Приятно, что Ольга так быстро откликнулась на мои идеи. Простор и
                                     стиль, в нашем
@@ -292,7 +299,7 @@
                     </li>
                     <li class="clients-item">
                         <a target="_blank" href="https://www.gov.spb.ru/gov/terr/reg_admiral/"><img
-                                src="img/logo/clients/admiralteysky_district.svg"
+                                src="img/logo/clients/admiralteyskyDistrict.svg"
                                 alt="Администрация Адмиралтейского района" width="68" height="101"></a>
                     </li>
                     <li class="clients-item">
@@ -305,7 +312,6 @@
                     </li>
                 </ul>
             </div>
-            </div>
         </section>
 
         <section class="connection">
@@ -313,7 +319,7 @@
                 <div class="connection-block">
                     <h2>Хотите поработать с нами?</h2>
                     <p>Обсудим ваши идеи и создадим идеальный интерьер вместе</p>
-                    <a href="#" class="button connection-link">Свяжитесь с нами<svg width="18" height="17"
+                    <a href="form.html" class="button connection-link">Свяжитесь с нами<svg width="18" height="17"
                             viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 8.15295L14.7232 8.0161M9.61818 1.62891L16.1412 8.15189L9.48677 14.8063"
                                 stroke="#292F36" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
@@ -334,7 +340,7 @@
             <div class="footer-columns">
                 <section class="footer-info">
                     <div class="hf-logo">
-                        <img src="img/icons/favicons/kompled.svg" width="30" height="34" alt="Логотип">
+                        <img src="img/favicons/kompled.svg" width="30" height="34" alt="Логотип">
                         <h1>Комплэд</h1>
                     </div>
                     <p>Место, где дизайн отражает Вашу уникальность.</p>
@@ -342,10 +348,10 @@
                 <section class="footer-pages">
                     <h2>Страницы</h2>
                     <ul class="footer-pages clear-list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
                         <li><a href="portfolio.html">Портфолио</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="form.html">Контакты</a></li>
                     </ul>
                 </section>
                 <section class="footer-contacts">
@@ -360,11 +366,11 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <p>&copy; 2025 Комплэд | Создаём интерьеры, в которых хочется жить</p>
+                <p>&copy; 2025 Комплэд | Создаём интерьеры, в которых хочется жить | Все права защищены</p>
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

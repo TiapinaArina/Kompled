@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Комплэд</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!--
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/kompled.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/180.png">
--->
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -18,22 +18,19 @@
         <nav class="main-navigation">
             <div class="container">
                 <div class="main-navigation-wrapper">
-                    <a class="hf-logo" href="#">
-                        <img src="img/icons/favicons/kompled.svg" width="35.5" height="39" alt="Логотип">
+                    <a class="hf-logo" href="index.html">
+                        <img src="img/favicons/kompled.svg" width="35.5" height="39" alt="Логотип">
                         <h1>Комплэд</h1>
                     </a>
                     <div class="line-nav">
                         <ul class="site-navigation clear-list">
                             <li><a href="index.html">Главная</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href=" class=" active-navigation>Услуги</a></li>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="services.html" class="active-navigation">Услуги</a></li>
                             <li><a href="portfolio.html">Портфолио</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="form.html">Контакты</a></li>
                         </ul>
                     </div>
-                    <!--
-                    <a href="#" class="serch"></a>
-                    -->
                 </div>
             </div>
         </nav>
@@ -89,7 +86,7 @@
                     </li>
                     <li class="clients-item">
                         <a target="_blank" href="https://www.gov.spb.ru/gov/terr/reg_admiral/"><img
-                                src="img/logo/clients/admiralteysky_district.svg"
+                                src="img/logo/clients/admiralteyskyDistrict.svg"
                                 alt="Администрация Адмиралтейского района" width="68" height="101"></a>
                     </li>
                     <li class="clients-item">
@@ -203,7 +200,7 @@
         <section class="mission">
             <div class="container">
                 <div class="mission-content">
-                    <img class="mission-img" src="img/services/portfolio-link-block.jpg" alt="" width="600"
+                    <img class="mission-img" src="img/services/portfolioLinkBlock.jpg" alt="" width="600"
                         height="377">
                     <div class="mission-caption">
                         <h2>Ваш проект<br>под контролем</h2>
@@ -232,17 +229,17 @@
                         <p class="statistics-numb">30</p>
                         <p class="statistics-content">Лет существования студии</p>
                     </li>
-                    <img class="statistics-line" src="img/main/Line.svg" height="130px">
+                    <img class="statistics-line" src="img/main/line.svg" height="130px">
                     <li class="statistics-item">
                         <p class="statistics-numb">287</p>
                         <p class="statistics-content">Успешных проектов</p>
                     </li>
-                    <img class="statistics-line" src="img/main/Line.svg">
+                    <img class="statistics-line" src="img/main/line.svg">
                     <li class="statistics-item">
                         <p class="statistics-numb">15</p>
                         <p class="statistics-content">Проектов в разработке</p>
                     </li>
-                    <img class="statistics-line" src="img/main/Line.svg">
+                    <img class="statistics-line" src="img/main/line.svg">
                     <li class="statistics-item">
                         <p class="statistics-numb">250+</p>
                         <p class="statistics-content">Довольных клиентов</p>
@@ -261,7 +258,7 @@
             <div class="footer-columns">
                 <section class="footer-info">
                     <div class="hf-logo">
-                        <img src="img/icons/favicons/kompled.svg" width="30" height="34" alt="Логотип">
+                        <img src="img/favicons/kompled.svg" width="30" height="34" alt="Логотип">
                         <h1>Комплэд</h1>
                     </div>
                     <p>Место, где дизайн отражает Вашу уникальность.</p>
@@ -269,10 +266,10 @@
                 <section class="footer-pages">
                     <h2>Страницы</h2>
                     <ul class="footer-pages clear-list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
                         <li><a href="portfolio.html">Портфолио</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="form.html">Контакты</a></li>
                     </ul>
                 </section>
                 <section class="footer-contacts">
@@ -291,7 +288,9 @@
             </div>
         </div>
     </footer>
+    <!--
     <script src="main.js"></script>
+    -->
 </body>
 
 </html>

@@ -80,3 +80,5 @@ window.addEventListener("resize", () => {
 
 createDots();
 updateSlidePosition();
+
+

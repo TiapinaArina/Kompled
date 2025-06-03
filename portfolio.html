@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
+
     <head>
         <meta charset="UTF-8">
         <title>Комплэд</title>
@@ -24,13 +25,20 @@
                         <h1>Комплэд</h1>
                     </a>
                     <div class="line-nav">
-                        <ul class="site-navigation clear-list">
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="about.html">О нас</a></li>
-                            <li><a href="services.html">Услуги</a></li>
-                            <li><a href="#" class="active-navigation">Портфолио</a></li>
-                            <li><a href="form.html">Контакты</a></li>
-                        </ul>
+                        <button class="menu-toggle" aria-label="Открыть меню">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                        <nav class="mobile-nav">
+                            <ul class="site-navigation clear-list">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="#" class="active-navigation">Портфолио</a></li>
+                                <li><a href="form.html">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -60,7 +68,8 @@
                                 <p class="project-adress">Ул. Рубинштейна</p>
                                 <p class="project-style">Античный</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=1"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=1"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="portfolio-item">
@@ -70,7 +79,8 @@
                                 <p class="project-adress">Ул. Звёздная</p>
                                 <p class="project-style">Барокко</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=2"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=2"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="portfolio-item tall">
@@ -80,7 +90,8 @@
                                 <p class="project-adress">Ул. Малая Садовая</p>
                                 <p class="project-style">Арт-деко</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=4"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=4"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="portfolio-item">
@@ -90,7 +101,8 @@
                                 <p class="project-adress">Ул. Пушкинская</p>
                                 <p class="project-style">Хай-тек</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=3"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=3"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="portfolio-item tall">
@@ -100,7 +112,8 @@
                                 <p class="project-adress">Ул. Варшавская</p>
                                 <p class="project-style">Хай-тек</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=5"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=5"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="portfolio-item">
@@ -110,7 +123,8 @@
                                 <p class="project-adress">Ул. Благодатная</p>
                                 <p class="project-style">Минимализм</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=6"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=6"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="portfolio-item tall">
@@ -120,7 +134,8 @@
                                 <p class="project-adress">Ул. Гороховая</p>
                                 <p class="project-style">Хай-тек</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=8"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=8"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="portfolio-item">
@@ -130,12 +145,13 @@
                                 <p class="project-adress">Ул. Итальянская</p>
                                 <p class="project-style">Ренессанс</p>
                             </div>
-                            <a class="project-link" href="portfolioItem.html?id=7"><img src="img/main/arrowPortfolioItem.svg" alt=""></a>
+                            <a class="project-link" href="portfolioItem.html?id=7"><img
+                                    src="img/main/arrowPortfolioItem.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="pagination">
+                <div class="pagination visually-hidden">
                     <button class="page-btn active" onclick="showCard(1)">01</button>
                     <button class="page-btn" onclick="showCard(2)">02</button>
                     <button class="page-btn" onclick="showCard(3)">03</button>
@@ -167,10 +183,10 @@
                 <section class="footer-pages">
                     <h2>Страницы</h2>
                     <ul class="footer-pages clear-list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="form.html">Контакты</a></li>
                     </ul>
                 </section>
                 <section class="footer-contacts">
@@ -189,9 +205,9 @@
             </div>
         </div>
     </footer>
-    
-    <script src="js/script.js"></script>
-   
+
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

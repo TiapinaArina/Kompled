@@ -1,3 +1,11 @@
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.mobile-nav');
+
+toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    nav.classList.toggle('open');
+});
+
 const track = document.getElementById("sliderTrack");
 const slides = document.querySelectorAll(".testimonial");
 const dotsContainer = document.getElementById("dotsContainer");

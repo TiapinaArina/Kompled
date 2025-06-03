@@ -99,7 +99,7 @@ a {
     overflow: hidden;
 }
 
-.active-navigation {
+.active-navigation{
     border-bottom: solid 2px var(--basic-brown);
 }
 
@@ -223,7 +223,7 @@ h3 {
 
 .intro-slide {
     width: 80%;
-    padding: 0 40px;
+    padding:0 40px;
 }
 
 .intro-slogan {
@@ -248,7 +248,6 @@ h3 {
 .service-list {
     display: flex;
     justify-content: space-between;
-    background-color: var(--basic-white);
 }
 
 .service-item {
@@ -298,7 +297,6 @@ h3 {
 
 .about-company-img {
     border-radius: 0px 326px 0px 123px;
-    width: 100%;
 }
 
 
@@ -347,7 +345,6 @@ h3 {
 
 .projects-list {
     display: grid;
-    gap: 20px;
     justify-content: space-between;
     grid-template-columns: auto auto;
     background-color: var(--basic-white);
@@ -380,8 +377,6 @@ h3 {
 
 .project-img {
     display: block;
-    max-width: 548px;
-    height: auto;
 }
 
 
@@ -515,7 +510,7 @@ h3 {
     background-color: var(--basic-black);
     text-align: center;
     border-radius: 70px;
-    padding: 80px 20px;
+    padding: 80px 0;
     color: var(--basic-white);
 }
 
@@ -551,6 +546,7 @@ h3 {
 .footer-columns {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .footer-columns section {
@@ -559,7 +555,6 @@ h3 {
 
 .footer-info .hf-logo {
     margin-bottom: 18px;
-    max-width: min-content;
 }
 
 .footer-pages h2,
@@ -961,7 +956,6 @@ h3 {
 
 .about-company-block img {
     border-radius: 70px;
-    width: 100%;
 }
 
 .about-company-block .about-block:nth-child(2) .about-company-column {
@@ -1167,8 +1161,7 @@ h3 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    cursor: pointer;
-    ;
+    cursor: pointer;;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1232,33 +1225,8 @@ h3 {
 
 /* ===== АДАПТИВ ДЛЯ ПЛАНШЕТОВ (макс. ширина 1024px) ===== */
 @media (max-width: 1024px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    h2,
-    h3 {
-        font-size: 40px;
-    }
-
-    .intro,
-    .services,
-    .about-company,
-    .statistics,
-    .projects,
-    .reviews,
-    .clients {
-        margin-bottom: 90px;
-    }
-
     .container {
-        padding: 0 60px;
-    }
-
-
-    .banner-box {
-        padding-top: 120px;
-        margin-bottom: 120px;
+        padding: 0 20px;
     }
 
     .main-navigation-wrapper {
@@ -1275,7 +1243,7 @@ h3 {
         padding: 30px 60px;
     }
 
-    .intro-bg {
+    .intro-bg{
         padding: 150px 0 110px;
     }
 
@@ -1290,82 +1258,24 @@ h3 {
 
     .service-list {
         flex-direction: column;
-        gap: 60px;
+        gap: 40px;
     }
 
     .service-item {
         max-width: 100%;
     }
 
-    .service-item p {
-        margin-bottom: 12px;
-    }
-
     .about-block {
         flex-direction: column;
     }
 
-    .about-company-block {
-        margin-bottom: 100px;
-    }
-
-    .about-company-column {
-        border-left: none;
-    }
-
-    .about-company-block .about-block:nth-child(2) .about-company-column {
-        border-left: none;
-    }
-
-    .about-block img {
-        width: 500px;
-        height: auto;
-        order: -1;
-    }
-
-    .resume {
-        padding: 80px 0;
-    }
-
-    .statistics {
-        padding: 50px 0;
-    }
-
     .statistics-list {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .project-description {
-        border-right: none;
-        border-left: none;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .projects-list {
-        border-right: none;
-        border-left: none;
-    }
-
-    .project-img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .clients-list {
-        justify-content: center;
-        gap: 20px 40px;
-        flex-wrap: wrap;
-    }
-
-    .resume-content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .resume-content img {
-        width: 50%;
-        height: auto;
+        grid-template-columns: 1fr;
     }
 
     .workOrder-wrapper {
@@ -1380,38 +1290,29 @@ h3 {
         flex-direction: column;
     }
 
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
     .form-row {
         flex-direction: column;
     }
 
     .footer-columns {
-        gap: 60px;
-    }
-
-    .footer-vert-lines {
-        padding: 70px 60px;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
     }
 }
 
+
 /* ===== АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (макс. ширина 600px) ===== */
 @media (max-width: 600px) {
-
-    .intro,
-    .services,
-    .about-company,
-    .statistics,
-    .projects,
-    .reviews,
-    .clients {
-        margin-bottom: 60px;
-    }
-
     h1 {
         font-size: 30px;
     }
 
-    h2,
-    h3 {
+    h2, h3 {
         font-size: 30px;
     }
 
@@ -1423,28 +1324,12 @@ h3 {
         padding: 30px 20px;
     }
 
-    .intro-bg {
-        padding: 80px 0 110px;
-    }
-
-    .intro-slide {
-        padding: 0 45px;
-    }
-
     .intro-slogan {
         font-size: 40px;
     }
 
     .intro-slide p {
         font-size: 18px;
-    }
-
-    .intro-button {
-        padding: 15px 15px;
-    }
-
-    .about-block img {
-        max-width: 100%;
     }
 
     .statistics-numb {
@@ -1455,17 +1340,14 @@ h3 {
         width: 100%;
     }
 
-    .projects-list {
-        grid-template-columns: 1fr;
+    .project-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .testimonials {
         padding: 0 10px;
-    }
-
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
     }
 
     .form-container {
@@ -1495,19 +1377,8 @@ h3 {
         font-size: 24px;
     }
 
-    .footer-columns {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .hf-logo {
-        margin: auto;
-    }
-
-    .footer-columns section {
-        max-width: none;
+    .footer-vert-lines {
+        padding: 70px 0;
     }
 
     .footer-copyright {
@@ -1515,9 +1386,6 @@ h3 {
         padding: 20px 0;
     }
 }
-
-
-
 
 
 .menu-toggle {
@@ -1538,7 +1406,7 @@ h3 {
 }
 
 .menu-toggle.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 7px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .menu-toggle.open .bar:nth-child(2) {
@@ -1546,18 +1414,14 @@ h3 {
 }
 
 .menu-toggle.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -7px);
-}
-
-.menu-toggle span {
-    transform-origin: center;
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 600px) {
     .menu-toggle {
         display: flex;
         position: absolute;
-        top: 45px;
+        top: 30px;
         right: 20px;
         z-index: 1001;
     }
@@ -1587,6 +1451,5 @@ h3 {
 
     .main-navigation-wrapper {
         position: relative;
-        gap: 0;
     }
 }

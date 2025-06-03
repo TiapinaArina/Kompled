@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html сlass="page" lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -18,18 +18,25 @@
         <nav class="main-navigation">
             <div class="container">
                 <div class="main-navigation-wrapper">
-                    <a class="hf-logo" href="#">
+                    <a class="hf-logo" href="index.html">
                         <img src="img/favicons/kompled.svg" width="35.5" height="39" alt="Логотип">
                         <h1>Комплэд</h1>
                     </a>
                     <div class="line-nav">
-                        <ul class="site-navigation clear-list">
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="about.html">О нас</a></li>
-                            <li><a href="services.html">Услуги</a></li>
-                            <li><a href="portfolio.html">Портфолио</a></li>
-                            <li><a href="#" class="active-navigation">Контакты</a></li>
-                        </ul>
+                        <button class="menu-toggle" aria-label="Открыть меню">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                        <nav class="mobile-nav">
+                            <ul class="site-navigation clear-list">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="portfolio.html">Портфолио</a></li>
+                                <li><a href="#" class="active-navigation">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -95,7 +102,8 @@
                         </div>
                         <div class="contact-form">
                             <h3 class="visually-hidden">Напишите нам</h3>
-                            <form class="form-container" action="https://echo.htmlacademy.ru" method="get">
+                            <form class="form-container" action="https://formsubmit.co/tiapinaarina@gmail.com"
+                                method="post">
                                 <fieldset class="form-review-item form-group--fio">
                                     <legend class="form-review-title visually-hidden">
                                         Представьтесь:</legend>
@@ -189,9 +197,9 @@
                     <ul class="footer-pages clear-list">
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="about.html">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
+                        <li><a href="services.html">Услуги</a></li>
                         <li><a href="portfolio.html">Портфолио</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="form.html">Контакты</a></li>
                     </ul>
                 </section>
                 <section class="footer-contacts">
@@ -210,9 +218,8 @@
             </div>
         </div>
     </footer>
-    <!--
-    <script src="main.js"></script>
-    -->
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

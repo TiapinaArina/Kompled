@@ -4,9 +4,6 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-// Получаем id карточки из URL
-const itemId = getQueryParam('id');
-
 // Массив данных для портфолио
 const portfolioItems = [
     {
@@ -123,45 +120,65 @@ const portfolioItems = [
     }
 ];
 
-// Найти выбранный элемент по id
-const selectedItem = portfolioItems.find(item => item.id == itemId);
+const itemId = parseInt(getQueryParam('id'));
+const item = portfolioItems.find(el => el.id === itemId);
 
-// Проверка, найден ли элемент
-if (selectedItem) {
-    const customerElement = document.querySelector('.portfolio-customer');
-    customerElement.textContent = selectedItem.customer;
-    const locationElement = document.querySelector('.portfolio-location');
-    locationElement.textContent = selectedItem.location;
-    const stageElement = document.querySelector('.portfolio-stage');
-    stageElement.textContent = selectedItem.stage;
-    const yearElement = document.querySelector('.portfolio-year');
-    yearElement.textContent = selectedItem.year;
-    // Обновление заголовка и описания
-    const titleElement = document.querySelector('.portfolio-caption-title');
-    titleElement.textContent = selectedItem.title;
-    const descriptionElement = document.querySelector('.portfolio-caption-text');
-    descriptionElement.textContent = selectedItem.description;
+if (item) {
+    document.querySelector('.portfolio-customer').textContent = item.customer;
+    document.querySelector('.portfolio-location').textContent = item.location;
+    document.querySelector('.portfolio-stage').textContent = item.stage;
+    document.querySelector('.portfolio-year').textContent = item.year;
+    document.querySelector('.portfolio-caption-title').textContent = item.title;
+    document.querySelector('.portfolio-caption-text').textContent = item.description;
 
+    const slider = document.getElementById('portfolio-slider');
 
-    // Обновление изображений и текста на странице
-    const portfolioSlider = document.querySelector('.portfolio-slider');
-    const modalImg = document.getElementById('modal-img');
+    const lookBox = document.getElementById('look-box');
+    lookBox.onclick = () => openModal(0);
 
-    // Загрузка изображений в слайдер
-    selectedItem.images.forEach((image, index) => {
-        const imgElement = document.createElement('img');
-        imgElement.src = image;
-        imgElement.classList.add('preview');
-        imgElement.onclick = () => openModal(index);
-        portfolioSlider.appendChild(imgElement);
-    });
+    // Показываем только первую картинку на странице
+    if (item.images.length > 0) {
+        const firstImg = document.createElement('img');
+        firstImg.src = item.images[0];
+        firstImg.style.cursor = 'pointer';
+        firstImg.style.maxWidth = '100%';
+        firstImg.style.borderRadius = '70px';
+        firstImg.onclick = () => openModal(0);
+        slider.appendChild(firstImg);
+    }
 
+    // Модальное окно и листание
+    let currentIndex = 0;
+
+    function openModal(index) {
+        currentIndex = index;
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        modal.style.display = 'flex';
+        modalImg.src = item.images[currentIndex];
+    }
+
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % item.images.length;
+        document.getElementById('modal-img').src = item.images[currentIndex];
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + item.images.length) % item.images.length;
+        document.getElementById('modal-img').src = item.images[currentIndex];
+    }
+
+    // Делаем функции доступными глобально
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+    window.nextImage = nextImage;
+    window.prevImage = prevImage;
 
 }
-
-
-
-
 
 
 

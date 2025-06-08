@@ -593,7 +593,7 @@ h3 {
 
 /*PORTFOLIO*/
 .portfolio-banner-box {
-    background-image: url(/img/portfolio/bannerPortfolio.png);
+    background-image: url(/img/portfolio/bannerPortfolio.jpg);
 }
 
 .portfolio {
@@ -677,7 +677,7 @@ h3 {
 /*SERVICE PAGE MAIN*/
 
 .servicesMain-banner-box {
-    background-image: url(/img/servicesMain/bannerServicesMain.png);
+    background-image: url(/img/servicesMain/bannerServicesMain.jpg);
 }
 
 .servicesMain-banner-stand {
@@ -765,7 +765,7 @@ h3 {
 
 .services-banner-box {
     padding-top: 180px;
-    background-image: url(/img/services/bannerServices.png);
+    background-image: url(/img/services/bannerServices.jpg);
 
 }
 
@@ -892,7 +892,7 @@ h3 {
 
 /*/ABOUT/*/
 .about-banner-box {
-    background-image: url(/img/about/bannerAbout.png);
+    background-image: url(/img/about/bannerAbout.jpg);
 }
 
 .about-banner-stand {

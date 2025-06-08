@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html сlass="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Комплэд</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/kompled.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page-body">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <div class="container">
+                <div class="main-navigation-wrapper">
+                    <a class="hf-logo" href="index.html">
+                        <img src="img/favicons/kompled.svg" width="35.5" height="39" alt="Логотип">
+                        <h1>Комплэд</h1>
+                    </a>
+                    <div class="line-nav">
+                        <button class="menu-toggle" aria-label="Открыть меню">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                        <nav class="mobile-nav">
+                            <ul class="site-navigation clear-list">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="portfolio.html" class="active-navigation">Портфолио</a></li>
+                                <li><a href="form.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="service-page">
+        <div class="bg">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+
+        <div class="banner-box portfolio-banner-box">
+            <div class="banner-stand">
+                <h2 class="banner-heading">Портфолио</h2>
+            </div>
+        </div>
+
+
+
+        <section class="portfolio-item-info">
+            <div class="container">
+                <div class="portfolio-info-row">
+                    <div class="portfolio-info-short">
+                        <div class="portfolio-short-column">
+                            <p>Заказчик</p>
+                            <p>Локация</p>
+                            <p>Стадия</p>
+                            <p>Год</p>
+                        </div>
+                        <div class="portfolio-short-column">
+                            <p class="portfolio-customer"></p>
+                            <p class="portfolio-location"></p>
+                            <p class="portfolio-stage"></p>
+                            <p class="portfolio-year"></p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info-caption">
+                        <h2 class="portfolio-caption-title"></h2>
+                        <div class="portfolio-caption-text"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="portfolio-box">
+            <div class="container">
+                <div class="portfolio-slider" id="portfolio-slider">
+                    <div class="look-box" id="look-box">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36.4329 33.2861L28.0452 24.8984C30.0646 22.21 31.1547 18.9378 31.151 15.5755C31.151 6.98723 24.1638 0 15.5755 0C6.98723 0 0 6.98723 0 15.5755C0 24.1638 6.98723 31.151 15.5755 31.151C18.9378 31.1547 22.21 30.0646 24.8984 28.0452L33.2861 36.4329C33.7107 36.8125 34.2644 37.0151 34.8337 36.9991C35.403 36.9832 35.9445 36.7499 36.3472 36.3472C36.7499 35.9445 36.9832 35.403 36.9991 34.8337C37.0151 34.2644 36.8125 33.7107 36.4329 33.2861ZM4.45015 15.5755C4.45015 13.3751 5.10264 11.2242 6.32511 9.3946C7.54758 7.56504 9.28513 6.13907 11.318 5.29702C13.3509 4.45496 15.5879 4.23464 17.746 4.66392C19.9041 5.09319 21.8864 6.15278 23.4423 7.70869C24.9983 9.2646 26.0578 11.247 26.4871 13.4051C26.9164 15.5632 26.6961 17.8001 25.854 19.833C25.012 21.8659 23.586 23.6035 21.7564 24.8259C19.9269 26.0484 17.7759 26.7009 15.5755 26.7009C12.626 26.6974 9.79825 25.5241 7.7126 23.4384C5.62696 21.3528 4.45369 18.5251 4.45015 15.5755Z"
+                                fill="#CDA274" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div class="controls">
+                <button onclick="prevImage()">&#10094;</button>
+                <button onclick="nextImage()">&#10095;</button>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    <footer class="main-footer">
+        <div class="container footer-vert-lines">
+            <div class="bg">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="footer-columns">
+                <section class="footer-info">
+                    <div class="hf-logo">
+                        <img src="img/favicons/kompled.svg" width="30" height="34" alt="Логотип">
+                        <h1>Комплэд</h1>
+                    </div>
+                    <p>Место, где дизайн отражает Вашу уникальность.</p>
+                </section>
+                <section class="footer-pages">
+                    <h2>Страницы</h2>
+                    <ul class="footer-pages clear-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="form.html">Контакты</a></li>
+                    </ul>
+                </section>
+                <section class="footer-contacts">
+                    <h2>Контакты</h2>
+                    <div class="contacts-list">
+                        <p class="contacts-adress">Санкт-Петербург, Гражданская улица, 2/4</p>
+                        <p class="contacts-email"><a href="mailto:compled@gmail.com">compled@gmail.com</a></p>
+                        <p class="contacts-phone"><a href="tel:+78126276507">+7 (812) 627-65-07</a></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>&copy; 2025 Комплэд | Создаём интерьеры, в которых хочется жить</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

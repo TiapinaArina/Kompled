@@ -892,7 +892,7 @@ h3 {
 
 /*/ABOUT/*/
 .about-banner-box {
-    background-image: url(/img/about/bannerAbout.jpg);
+    background-image: url(../img/about/bannerAbout.jpg);
 }
 
 .about-banner-stand {

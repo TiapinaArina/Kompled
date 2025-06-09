@@ -593,7 +593,7 @@ h3 {
 
 /*PORTFOLIO*/
 .portfolio-banner-box {
-    background-image: url(/img/portfolio/bannerPortfolio.jpg);
+    background-image: url(../img/portfolio/bannerPortfolio.jpg);
 }
 
 .portfolio {
@@ -677,7 +677,7 @@ h3 {
 /*SERVICE PAGE MAIN*/
 
 .servicesMain-banner-box {
-    background-image: url(/img/servicesMain/bannerServicesMain.jpg);
+    background-image: url(../img/servicesMain/bannerServicesMain.jpg);
 }
 
 .servicesMain-banner-stand {
@@ -765,7 +765,7 @@ h3 {
 
 .services-banner-box {
     padding-top: 180px;
-    background-image: url(/img/services/bannerServices.jpg);
+    background-image: url(../img/services/bannerServices.jpg);
 
 }
 
@@ -1031,7 +1031,7 @@ h3 {
 
 
 .form-banner-box {
-    background-image: url(/img/form/bannerForm.jpg);
+    background-image: url(../img/form/bannerForm.jpg);
 }
 
 .form-banner-stand {
@@ -1057,6 +1057,7 @@ h3 {
 .form .resume-contacts {
     padding: 76px 50px 76px 32px;
     background-color: var(--basic-beige);
+    max-width: min-content;
     max-height: min-content;
     border-radius: 50px;
 }
@@ -1089,13 +1090,14 @@ h3 {
 .form-review-item textarea {
     border: 0;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--basic-black);
     padding-bottom: 15px;
 }
 
 .form-feedback {
     grid-column: span 2;
     resize: vertical;
+    border-right: 1px solid var(--border-line);
 }
 
 .form-review-button {
@@ -1108,6 +1110,8 @@ h3 {
 
 .map-frame {
     border-radius: 70px;
+    width: 100%;
+    height: 400px;
 }
 
 
@@ -1386,6 +1390,14 @@ h3 {
 
     .footer-columns {
         gap: 60px;
+    }
+
+    .resume-contacts-item {
+        justify-content: center;
+    }
+
+    .form .resume-contacts {
+        margin: auto;
     }
 
     .footer-vert-lines {

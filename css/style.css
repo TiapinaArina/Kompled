@@ -1016,6 +1016,7 @@ h3 {
     border-radius: 50%;
     width: 52px;
     height: 52px;
+    background-color: var(--basic-white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1388,8 +1389,14 @@ h3 {
         flex-direction: column;
     }
 
-    .footer-columns {
-        gap: 60px;
+    .form-wrapper h2 {
+        margin-bottom: 40px;
+    }
+
+    .icon-wrapper {
+        width: min-content;
+        height: auto;
+        background-color: none;
     }
 
     .resume-contacts-item {
@@ -1398,6 +1405,11 @@ h3 {
 
     .form .resume-contacts {
         margin: auto;
+        border-radius: 25px;
+    }
+
+    .footer-columns {
+        gap: 60px;
     }
 
     .footer-vert-lines {
@@ -1407,6 +1419,9 @@ h3 {
 
 /* ===== АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (макс. ширина 600px) ===== */
 @media (max-width: 600px) {
+    .page-body {
+        font-size: 18px;
+    }
 
     .intro,
     .services,
@@ -1419,12 +1434,12 @@ h3 {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     h2,
     h3 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .banner-stand,
@@ -1433,6 +1448,10 @@ h3 {
     .servicesMain-banner-stand,
     .form-banner-stand {
         padding: 30px 20px;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 
     .intro-bg {
@@ -1444,7 +1463,7 @@ h3 {
     }
 
     .intro-slogan {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .intro-slide p {
@@ -1491,6 +1510,10 @@ h3 {
     .form-review-button {
         grid-column: auto;
         width: 100%;
+    }
+
+    .form .resume-contacts {
+        padding: 10px 25px;
     }
 
     .portfolio-info-short {

@@ -568,7 +568,7 @@ h3 {
     margin-bottom: 26px;
 }
 
-.footer-pages li {
+.footer-pages li:not(:last-child) {
     margin-bottom: 22px;
 }
 
@@ -924,11 +924,11 @@ h3 {
 }
 
 .quote-text::before {
-    content: url(/img/about/quoteBefore.svg);
+    content: url(../img/about/quoteBefore.svg);
 }
 
 .quote-text::after {
-    content: url(/img/about/quoteAfter.svg);
+    content: url(../img/about/quoteAfter.svg);
 }
 
 .corner {
@@ -1324,6 +1324,7 @@ h3 {
 
     .about-company-block .about-block:nth-child(2) .about-company-column {
         border-left: none;
+        border-right: none;
     }
 
     .about-block img {
@@ -1459,7 +1460,7 @@ h3 {
     .services-banner-stand,
     .servicesMain-banner-stand,
     .form-banner-stand {
-        padding: 30px 20px;
+        padding: 15px 30px;
     }
 
     .container {
@@ -1485,6 +1486,14 @@ h3 {
 
     .button {
         padding: 15px 15px;
+    }
+
+    .service-list {
+        gap: 40px;
+    }
+
+    .service-item p {
+        margin-bottom: 0;
     }
 
     .about-block img {
@@ -1532,6 +1541,10 @@ h3 {
         padding: 0 10px;
     }
 
+    .rewiews-block h2 {
+        margin-bottom: 20px;
+    }
+
     .rewiews-block {
         padding: 20px 10px;
         border-radius: 40px;
@@ -1539,16 +1552,20 @@ h3 {
 
     .connection-block {
         border-radius: 40px;
-        padding: 20px 10px;
+        padding: 25px 10px;
+    }
+
+    .connection-block p {
+        margin-bottom: 20px;
     }
 
     .connection {
         margin-bottom: 40px;
     }
 
-.main-footer{
-    font-size: 15px;
-}
+    .main-footer {
+        font-size: 15px;
+    }
 
     .footer-pages h2,
     .footer-contacts h2 {
@@ -1556,7 +1573,11 @@ h3 {
         margin-bottom: 5px;
     }
 
-    .footer-pages li {
+    .footer-info .hf-logo {
+        margin-bottom: 5px;
+    }
+
+    .footer-pages li:not(:last-child) {
         margin-bottom: 5px;
     }
 
@@ -1572,45 +1593,30 @@ h3 {
         align-items: center;
         gap: 20px;
     }
+
     .footer-columns section {
         max-width: none;
     }
 
     .footer-copyright {
-        font-size: 16px;
-        padding: 20px 0;
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+    .hf-logo {
+        margin: auto;
     }
 
 
 
 
-
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
+    .banner-box {
+        padding-top: 80px;
+        margin-bottom: 40px;
     }
 
-    .form-container {
-        grid-template-columns: 1fr;
-    }
-
-    .form-feedback {
-        grid-column: auto;
-    }
-
-    .form-review-button {
-        grid-column: auto;
-        width: 100%;
-    }
-
-    .form .resume-contacts {
-        padding: 10px 25px;
-    }
-
-    .portfolio-info-short {
-        flex-direction: column;
-        padding: 40px 30px;
-        gap: 30px;
+    .quote-box {
+        margin-bottom: 100px;
     }
 
     .quote-wrapper {
@@ -1621,11 +1627,219 @@ h3 {
         font-size: 24px;
     }
 
+    .corner {
+        position: absolute;
+        width: 120px;
+    }
 
-    .hf-logo {
+    .about-block img {
+        border-radius: 40px;
+    }
+
+    .about-company-block .about-block:not(:last-child) {
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+    .about-company-block .about-block:last-child {
+        margin-bottom: 0;
+        gap: 20px;
+    }
+
+    .about-company-block {
+        margin-bottom: 40px;
+    }
+
+    .resume {
+        padding: 20px 0;
+        margin-bottom: 40px;
+    }
+
+    .resume-profassion {
+        margin-bottom: 20px;
+    }
+
+    .resume-caption {
+        margin-bottom: 20px;
+    }
+
+    .resume-content img {
+        width: 100%;
+    }
+
+    .resume-content {
+        gap: 30px;
+    }
+
+    .resume-info {
+        margin: 0 20px 10px;
+    }
+
+    .icon-wrapper {
+        background: none;
+    }
+
+    .resume-contacts-item {
+        margin-bottom: 10px;
+        justify-content: left;
+    }
+
+
+
+
+    .servicesMain {
+        margin-bottom: 50px;
+    }
+
+    .workOrder-wrapper {
+        padding: 30px 20px;
+        border-radius: 40px;
+    }
+
+    .workOrder-slogan {
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+    .workOrder-item {
+        gap: 30px;
+    }
+
+    .workOrder-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 0 120px 0 240px;
+    }
+
+    .workOrder-numb {
+        font-size: 80px;
+    }
+
+    .workOrder-info-graph {
+        margin-bottom: 25px;
+    }
+
+    .workOrder-info h3 {
+        margin-bottom: 5px;
+    }
+
+    .workOrder-info-graph svg {
+        width: 20%;
+        height: auto;
+    }
+
+    .workOrder-item:nth-child(2n) img {
+        order: 0;
+    }
+
+    .workOrder-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .workOrder {
+        margin-bottom: 60px;
+    }
+
+
+
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-info-short {
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+
+
+
+    .form-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-feedback {
+        grid-column: auto;
+    }
+
+    .form-review-button {
+        grid-column: auto;
         margin: auto;
     }
 
+    .form .resume-contacts {
+        padding: 10px 25px;
+    }
+
+    .contact-form {
+        width: 70%;
+        margin: auto;
+    }
+
+    .form-review-item:nth-child(2n+1) {
+        border-left: none;
+    }
+
+    .form-review-item:nth-child(2n),
+    .form-review-item textarea {
+        border-right: none;
+    }
+
+    .form-feedback {
+        border-right: none;
+    }
+
+    .map {
+        margin-bottom: 40px;
+    }
+
+    .map-frame {
+        border-radius: 40px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .form {
+        margin-bottom: 80px;
+    }
+
+
+
+
+    .portfolio-info-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .portfolio-info-short {
+        flex-direction: row;
+        padding: 30px;
+        border-radius: 40px;
+    }
+
+    .portfolio-info-caption {
+        margin: 0 20px;
+    }
+
+    .portfolio-item-info {
+        margin-bottom: 50px;
+    }
+    
+    .portfolio-box{
+        margin-bottom: 40px;
+    }
+
+}
+
+.portfolio-info-row {
+    flex-direction: column;
 
 }
 

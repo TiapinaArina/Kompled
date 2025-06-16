@@ -1831,11 +1831,89 @@ h3 {
     .portfolio-item-info {
         margin-bottom: 50px;
     }
-    
-    .portfolio-box{
+
+    .portfolio-box {
         margin-bottom: 40px;
     }
 
+
+
+
+    .information-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information-heading {
+        max-width: 100%;
+    }
+
+    .information-paragraphs {
+        max-width: 100%;
+    }
+
+    .main-information {
+        margin-bottom: 50px;
+    }
+
+    .highlighted {
+        margin-bottom: 30px;
+    }
+
+    .information-paragraph-margin {
+        margin-bottom: 15px;
+    }
+
+    .info-lists {
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        gap: 30px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .description-column {
+        max-width: 100%;
+    }
+
+    .info-lists h2 {
+        margin-bottom: 10px;
+    }
+
+    .description-item {
+        margin-bottom: 5px;
+    }
+
+    .description-item svg {
+        margin-right: 17px;
+        margin-top: 6px;
+    }
+
+    .description-lists {
+        margin-bottom: 50px;
+    }
+
+    .mission-img {
+        width: 100%;
+        height: auto;
+        border-radius: 40px;
+    }
+
+    .mission-content {
+        gap: 30px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .mission {
+        margin-bottom: 50px;
+    }
+
+.service-page .statistics {
+    margin-bottom: 20px;
+}
 }
 
 .portfolio-info-row {
@@ -1843,7 +1921,9 @@ h3 {
 
 }
 
-
+.mission-caption p {
+    margin-bottom: 20px;
+}
 
 
 
